@@ -1,0 +1,44 @@
+package de.unistgt.ipvs.vs.ex1.calcRMIserver;
+
+import java.rmi.registry.LocateRegistry;
+import java.rmi.registry.Registry;
+
+import de.unistgt.ipvs.vs.ex1.calculationImpl.CalculationImplFactory;
+
+/**
+ * Implement the run-method of this class to complete
+ * the assignment. You may also add some fields or methods.
+ */
+public class CalcRmiServer extends Thread {
+	private String regHost;
+	private String objName;
+	
+	public CalcRmiServer(String regHost, String objName) {
+		this.regHost = regHost;
+		this.objName = objName;
+	}
+	
+	@Override
+	public void run() {
+		if (regHost == null || objName == null) {
+			System.err.println("<registryHost> and/or <objectName> not set!");
+			return;
+		}
+        try {
+        	
+        	System.setProperty("java.rmi.server.hostname", regHost);
+        	
+        	CalculationImplFactory obj = new CalculationImplFactory();
+
+            // Bind the remote object's stub in the registry
+            Registry registry = LocateRegistry.getRegistry();
+            registry.bind(objName, obj);
+
+            System.err.println("Server ready");
+        } catch (Exception e) {
+            System.err.println("Server exception: " + e.toString());
+            e.printStackTrace();
+        }
+	}
+
+}

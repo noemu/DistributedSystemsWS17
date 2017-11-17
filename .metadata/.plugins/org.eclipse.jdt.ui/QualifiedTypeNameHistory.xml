@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="de.unistgt.ipvs.vs.ex1.calculation.ICalculation"/>
+<fullyQualifiedTypeName name="de.unistgt.ipvs.vs.ex1.calculationImpl.CalculationImpl"/>
+<fullyQualifiedTypeName name="de.unistgt.ipvs.vs.ex1.calculationImpl.CalculationImplFactory"/>
+<fullyQualifiedTypeName name="java.rmi.registry.Registry"/>
+<fullyQualifiedTypeName name="java.rmi.registry.LocateRegistry"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="de.unistgt.ipvs.vs.ex1.calcRMIserver.CalcRmiServer"/>
+<fullyQualifiedTypeName name="de.unistgt.ipvs.vs.ex1.calculation.ICalculationFactory"/>
+<fullyQualifiedTypeName name="java.rmi.server.UnicastRemoteObject"/>
+</qualifiedTypeNameHistroy>

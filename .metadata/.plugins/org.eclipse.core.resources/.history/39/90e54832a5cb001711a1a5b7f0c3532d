@@ -1,0 +1,12 @@
+package de.unistgt.ipvs.vs.ex1.run;
+
+import de.unistgt.ipvs.vs.ex1.calcRmi
+
+public class main {
+
+	public static void main(String[] args) {
+		Thread serverThread = new 
+
+	}
+
+}

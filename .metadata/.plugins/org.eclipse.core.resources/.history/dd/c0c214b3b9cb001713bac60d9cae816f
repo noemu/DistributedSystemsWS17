@@ -1,0 +1,13 @@
+package de.unistgt.ipvs.vs.ex1.calcRMIserver;
+
+
+
+public class main {
+
+	public static void main(String[] args) {
+		Thread serverThread = new CalcRmiServer("localhost", "Hello");
+		serverThread.start();
+
+	}
+
+}
